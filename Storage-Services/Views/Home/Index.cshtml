@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model YourNamespace.Models.UploadViewModel
+
+<h2>Upload Image</h2>
+<form asp-action="UploadImage" method="post" enctype="multipart/form-data">
+    <input type="file" name="file" />
+    <button type="submit">Upload</button>
+</form>
+
+<h2>Process Order</h2>
+<form asp-action="ProcessOrder" method="post">
+    <input type="text" name="orderId" placeholder="Enter Order ID" />
+    <button type="submit">Process</button>
+</form>
+
+<h2>Upload Contract</h2>
+<form asp-action="UploadContract" method="post" enctype="multipart/form-data">
+    <input type="file" name="file" />
+    <button type="submit">Upload</button>
+</form>
+
